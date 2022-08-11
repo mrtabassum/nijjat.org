@@ -257,7 +257,7 @@ class GeneralSettingsController extends Controller
                 ];
                 $msg = $result['msg'];
                 file_put_contents('@core/license.json', json_encode($license_info));
-        }
+        
         return redirect()->back()->with(['msg' => $msg , 'type' => $type]);
     }
 
